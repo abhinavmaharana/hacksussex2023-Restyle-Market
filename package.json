@@ -1,0 +1,16 @@
+{
+  "name": "restylemarket",
+  "version": "1.0.0",
+  "description": "Clothes trading marketplace.",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restyle",
+    "marketplace",
+    "abhinavmaharana"
+  ],
+  "author": "Abhinav Maharana",
+  "license": "ISC"
+}
