@@ -1,3 +1,159 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+	margin: 0;
+	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+	background-color: #8c699f;
+	/* top right bottom left */
+	padding: 10px 10px 0px 10px;	
+}
+
+
+
+.navbar {		
+	display: flex;
+	background-color: #eeeeee;
+	color: white;
+	align-items: center;
+	height: 60px;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.navbar--image {
+	padding-left: 10px;
+	height: 100%;
+}
+
+.navbar--title {
+	font-size: x-large;
+	margin-right: auto;
+	color: #8c699f;
+	text-decoration: none;
+}
+
+.navbar--menu {
+	display: flex;
+	gap: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navbar--button {
+	/* top right bottom left */
+	padding: 10px 40px 10px 40px;
+	background-color: #8c699f;
+	border-radius: 5%;
+	border: none;
+	opacity: 0.6;
+	color: white;
+}
+
+.navbar--button:hover {
+	background-color: rgb#8c699f;
+	color: white;
+	opacity: 1;
+}
+
+.main--content {
+	padding: 10px;
+	min-height: 600px;
+}
+
+.footer {
+	overflow: hidden;
+	position: static;
+	
+    margin: auto;
+	bottom: 0;
+	width: 100%;
+	
+	background-color: #eeeeee;
+	color: #8c699f;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.footer--item {
+	text-align: center;
+	margin: 5px;
+}
+
+
+.cards__list {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	/* top right bottom left */
+	padding: 100px 60px 100px 80px;
+	gap: 50px;
+}
+
+.card {
+	width: 200px;
+	font-size: 12px;
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	/* Created with https://www.css-gradient.com */
+	background: rgb(253,243,255);
+		background: linear-gradient(180deg, rgba(253,243,255,1) 35%, rgba(220,202,220,1) 100%);
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	color: #303030;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.card__image {
+	width: 100%;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+	margin: 0;
+	font-size: 24px;
+}
+
+.card__location {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.card__description {
+	font-size: 16px;
+}
+
+.card__price {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.card__button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: none;
+	background-color: #b482bc;
+	border-radius: 20px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+
+}
+
+.card__button:hover {
+	background-color: #bc74b1;
+}
