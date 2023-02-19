@@ -1,9 +1,10 @@
 const crypto = require('crypto');
-const hashService = require('./hash-service')
+const hashService = require('./hash-service');
 
+require("dotenv").config({path: "backend/config/config.env"})
 const smsSid = process.env.SMS_SID;
-const smsAuthToken = process.env.SMS_AUTH_TOKEN
-require('dotenv');
+const smsAuthToken = process.env.SMS_AUTH_TOKEN;
+
 const twilio = require('twilio')(smsSid,smsAuthToken, {lazyLoading: true})
 
 class OtpService {
@@ -17,7 +18,7 @@ class OtpService {
             {
                 to: phone,
                 from: process.env.SMS_FROM_NUMBER,
-                body: `Your restyle market OTP is ${otp}`,
+                body: `Your restyle OTP is ${otp}`,
             }
         )
     }
@@ -28,3 +29,5 @@ class OtpService {
     }
 
 }
+
+module.exports = new OtpService();
