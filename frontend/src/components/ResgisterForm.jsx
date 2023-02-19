@@ -4,70 +4,138 @@ export default function RegisterForm() {
   return (
       <div class=" grid place-items-center h-screen">
         <div className="grid place-items-center h-screen container--body">
-          <form>
-          <div class="mb-3 xl:w-96">
-            <label
-              for="exampleEmail0"
-              class="form-label inline-block mb-2 text-gray-700"
-            >
-              Username:
-            </label>
-            <input
-              type="text"
-              class="
-                form-control
-                block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-700
-                bg-white bg-clip-padding
-                border border-solid border-gray-300
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-              "
-              id="exampleEmail0"
-              placeholder="Username"
-            />
+          <form action="/register" method="POST" noValidate>
+          <div className="grid grid-cols-2 gap-4">
+            <div class="mb-3 ">
+              <label
+                for="firstname"
+                class="form-label inline-block mb-2 text-gray-700"
+              >
+                First Name:
+              </label>
+              <input
+                type="text"
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="firstname"
+                name="firstname"
+                placeholder="First name"
+              />
+            </div>
+            <div class="mb-3 ">
+              <label
+                for="lastname"
+                class="form-label inline-block mb-2 text-gray-700"
+              >
+                Last Name:
+              </label>
+              <input
+                type="text"
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="lastname"
+                name="lastname"
+                placeholder="Last name"
+              />
+            </div>
           </div>
-          <div class="mb-3 xl:w-96">
-            <label
-              for="exampleEmail0"
-              class="form-label inline-block mb-2 text-gray-700"
-            >
-              Email:
-            </label>
-            <input
-              type="email"
-              class="
-                form-control
-                block
-                w-full
-                px-3
-                py-1.5
-                text-base
-                font-normal
-                text-gray-700
-                bg-white bg-clip-padding
-                border border-solid border-gray-300
-                rounded
-                transition
-                ease-in-out
-                m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-              "
-              id="exampleEmail0"
-              placeholder="Email"
-            />
+          <div className="grid grid-cols-2 gap-4">
+            <div class="mb-3 ">
+              <label
+                for="username"
+                class="form-label inline-block mb-2 text-gray-700"
+              >
+                Username:
+              </label>
+              <input
+                type="text"
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="username"
+                name="username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="mb-3 ">
+              <label
+                for="email"
+                class="form-label inline-block mb-2 text-gray-700"
+              >
+                Email:
+              </label>
+              <input
+                type="email"
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="Email"
+                name="Email"
+                placeholder="Email"
+              />
+            </div>
           </div>
           <div class="mb-3 xl:w-96">
               <label
-                for="examplePassword0"
+                for="password"
                 class="form-label inline-block mb-2 text-gray-700"
               >
                 Password:
@@ -91,37 +159,8 @@ export default function RegisterForm() {
                   m-0
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                 "
-                id="examplePassword0"
-                placeholder="Password"
-              />
-            </div>
-            <div class="mb-3 xl:w-96">
-              <label
-                for="examplePassword0"
-                class="form-label inline-block mb-2 text-gray-700"
-              >
-                Confirm Password:
-              </label>
-              <input
-                type="password"
-                class="
-                  form-control
-                  block
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                "
-                id="examplePassword0"
+                id="password"
+                name="password"
                 placeholder="Password"
               />
             </div>
